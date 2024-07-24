@@ -42,6 +42,11 @@ h1 {
 .navbar-collapse {
     justify-content: flex-end;
 }
+.navbar-logo {
+    height: 50px;  
+    margin-right: 0px;
+    margin-top: -9px;
+}
  
 .navbar-nav .nav-link {
     color: #ac3c3c;
