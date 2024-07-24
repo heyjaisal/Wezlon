@@ -12,17 +12,52 @@ h1 {
     color: #333;
 }
 
-/* Custom Navbar Styles */
-.navbar-nav .nav-link {
-    font-weight: bold;
-    font-size: 16px;
-    color: rgb(254, 64, 64);
-}
+ 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5) !important; 
-    backdrop-filter: blur(10px); 
-    height: 100px;
-  }
+    background-color: #343a40;
+    padding: 1rem;
+}
+
+ 
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa;
+}
+ 
+.navbar-toggler {
+    border-color: #f8f9fa;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+ 
+.navbar-collapse {
+    justify-content: flex-end;
+}
+ 
+.navbar-nav .nav-link {
+    color: #ac3c3c;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #adb5bd;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f8f9fa;
+    font-weight: bold;
+}
 
 .video-background {
     position: relative;
