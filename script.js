@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     setTimeout(() => {
         popup.style.display = "block";
-    }, 5000);  
+    }, 2000);  
 
     span.onclick = function() {
         popup.style.display = "none";
