@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     setTimeout(() => {
         popup.style.display = "block";
-    }, 2000);  
+    }, 4000);  
 
     span.onclick = function() {
         popup.style.display = "none";
@@ -42,3 +42,15 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', toggleNavbarClass);
     toggleNavbarClass();
 });
+
+
+// website loading 
+
+window.onload = function() {
+    setTimeout(function() {
+        var loading = document.getElementById('loading');
+        var content = document.getElementById('content');
+        loading.style.display = 'none';
+        content.style.display = 'block';
+    }, 2000);  
+};
