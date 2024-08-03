@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     setTimeout(() => {
         popup.style.display = "block";
-    }, 2000);  
+    }, 4000);  
 
     span.onclick = function() {
         popup.style.display = "none";
@@ -42,3 +42,108 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', toggleNavbarClass);
     toggleNavbarClass();
 });
+
+
+// website loading 
+
+window.onload = function() {
+    setTimeout(function() {
+        var loading = document.getElementById('loading');
+        var content = document.getElementById('content');
+        loading.style.display = 'none';
+        content.style.display = 'block';
+    }, 2000);  
+};
+
+
+
+ // Form validation
+ document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var isValid = true;
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var place = document.getElementById('place').value;
+    var graduation = document.getElementById('graduation').value;
+
+    var nameError = document.getElementById('nameError');
+    var emailError = document.getElementById('emailError');
+    var phoneError = document.getElementById('phoneError');
+    var placeError = document.getElementById('placeError');
+    var graduationError = document.getElementById('graduationError');
+
+  
+    nameError.textContent = '';
+    emailError.textContent = '';
+    phoneError.textContent = '';
+    placeError.textContent = '';
+    graduationError.textContent = '';
+
+    if (!name) {
+      nameError.textContent = 'Name is required.';
+      isValid = false;
+    }
+    if (!email) {
+      emailError.textContent = 'Email is required.';
+      isValid = false;
+    } else if (!validateEmail(email)) {
+      emailError.textContent = 'Please enter a valid email.';
+      isValid = false;
+    }
+    if (!phone) {
+      phoneError.textContent = 'Phone number is required.';
+      isValid = false;
+    } else if (!validatePhone(phone)) {
+      phoneError.textContent = 'Please enter a valid phone number.';
+      isValid = false;
+    }
+    if (!place) {
+      placeError.textContent = 'Place is required.';
+      isValid = false;
+    }
+    if (!graduation) {
+      graduationError.textContent = 'Last graduation is required.';
+      isValid = false;
+    }
+
+    if (isValid) {
+      fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone,
+          place: place,
+          graduation: graduation
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert('Form submitted successfully!');
+        } else {
+          alert('There was an error submitting the form.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
+      });
+    }
+  });
+
+  function validateEmail(email) {
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+
+  function validatePhone(phone) {
+    var re = /^[0-9]{10}$/;
+    return re.test(phone);
+  }
+ 
