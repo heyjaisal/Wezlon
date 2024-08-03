@@ -380,3 +380,47 @@ span{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+
+.form-container {
+    color: #000;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-title {
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: bold;
+}
+
+.main-content {
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+.main-content h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+.main-content p {
+    font-size: 1.2em;
+    color: white;
+}
+.btn-get-support {
+    margin-top: 30px;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 0.5rem;
+  }
