@@ -52,7 +52,7 @@ window.onload = function() {
         var content = document.getElementById('content');
         loading.style.display = 'none';
         content.style.display = 'block';
-    }, 2000);  
+    }, 1000);  
 };
 
 
