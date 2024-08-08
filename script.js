@@ -147,3 +147,21 @@ window.onload = function() {
     return re.test(phone);
   }
  
+
+  // More detaile
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const moreDetails = document.querySelector('.more-details');
+    
+    readMoreBtn.addEventListener('click', function() {
+      if (moreDetails.style.display === 'none' || moreDetails.style.display === '') {
+        moreDetails.style.display = 'block';
+        readMoreBtn.textContent = 'Read Less'; // Change button text
+      } else {
+        moreDetails.style.display = 'none';
+        readMoreBtn.textContent = 'Read More'; // Change button text back
+      }
+    });
+  });
+  
