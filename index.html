@@ -1,69 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wezlon</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body>
-    <!-- Nav  -->
-    <div id="loading">
-      <div class="loader"></div>
-      <!-- <img src="loader.gif" /> -->
-  </div>
-  
-     <nav class="navbar navbar-expand-lg sticky-top ">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/Wezlon 2.png" alt="Wezlon Logo" class="navbar-logo">
-                Wezlon
-            </a>
-                
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>  
-      </nav>
-      <div class="container-fluid">
-        <div class="row video-background">
-            <div class="col-12">
-                <video class="w-100" autoplay muted loop>
-                    <source src="3209828-uhd_3840_2160_25fps.mp4" type="video/mp4">
-                </video>
-                <!-- <h1>Kickstart Your IT Career with Wezlon!</h1> -->
-                 <h1>Coming soon</h1>
-                <div class="aboutus-btn">
 
-                  <a href="#about-us" class="btn btn-danger">About Us</a>
+<head>
+    <meta charset="utf-8">
+    <title>Wezlon</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+       <!-- Nav  -->
+       <div id="loading">
+        <div class="loader"></div>
+        <!-- <img src="loader.gif" /> -->
+    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="display-5 m-0 text-primary">Wez<span class="text-secondary">Lon</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                        <a href="team.html" class="dropdown-item">The Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
                 </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="tel:+91 8138830876" class="nav-item nav-link nav-contact bg-secondary text-white px-5 ms-lg-5"><i class="bi bi-telephone-outbound me-2"></i>+91 8138830876</a>
             </div>
         </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="w-100" autoplay muted loop>
+                        <source src="/video/3209828-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase animated bounceInDown">Choose Your Zone</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Kickstart Your IT Career with Wezlon!</h1>
+                            
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="w-100" autoplay muted loop>
+                        <source src="/video/3209828-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase animated bounceInDown">Choose Your Zone</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Kickstart Your IT Career with Wezlon!</h1> 
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="w-100" autoplay muted loop>
+                        <source src="/video/3209828-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase animated bounceInDown">Choose Your Zone</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Kickstart Your IT Career with Wezlon!</h1>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-    
+    <!-- Carousel End -->
 
-      <!-- popupform-section -->
+   
+      <!-- Popup form start  -->
 
-      
-      <section>
+    <section>
         <div class="container">
             <div id="popup" class="popup">
               <div class="form-container">
@@ -108,299 +178,434 @@
         </div>
     </section>
 
-    <!-- section who -->
+    <!-- Popup form end -->
 
-    <section class="about_section layout_padding" style="margin-top: 130px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 px-0">
-            <div class="img_container">
-              <div class="img-box">
-                <img src="/hero-content.jpg" alt="" />
-              </div>
+<!-- About Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="img/Screenshot 2024-08-09 at 3.49.51 PM.png" style="object-fit: cover;">
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Who Are We?
-                </h2>
-              </div>
-              <p class="short-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit
-              </p>
-              <p class="more-details" style="display: none;">
-                Here you can include more details about who you are. This content will be revealed when the "Read More" button is clicked.
-              </p>
-              <div class="btn-box">
-                <a href="javascript:void(0);" class="read-more-btn">
-                  Read More
-                </a>
-              </div>
+            <div class="col-lg-7">
+                <div class="mb-4">
+                    <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h5>
+                    <h1 class="display-5 mb-0">Leading the Way in Quality Education & Research</h1>
+                </div>
+                <h4 class="text-body fst-italic mb-4">Committed to excellence in teaching, research, and community service.</h4>
+                <p class="mb-4">Our institution has been a beacon of knowledge and learning for over two decades. We provide a nurturing environment for students to grow and excel in their academic journey. Our experienced faculty members are dedicated to mentoring and guiding students towards success.</p>
+                <div class="row g-3">
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex flex-column justify-content-center text-center border-bottom border-5 border-secondary rounded p-3" style="height: 200px;">
+                            <i class="fa fa-graduation-cap fa-4x text-white mb-4"></i>
+                            <h4 class="text-white mb-0">20+ Years of Excellence</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div class="bg-secondary d-flex flex-column justify-content-center text-center border-bottom border-5 border-primary rounded p-3" style="height: 200px;">
+                            <i class="fa fa-award fa-4x text-white mb-4"></i>
+                            <h4 class="text-white mb-0">Accredited & Recognized</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    
+    </div>
+</div>
+<!-- About End -->
 
 
-    <!-- Course Section -->`
-     
-    <section style=" margin-top: 46px;
-    padding-top: 34px;">
-      <div class="container text-center my-5">
-          <h2>Our Courses</h2>
-          <div class="row mt-4">
-              <div class="col-md-4">
-                  <div class="course-box">
-                      <div class="icon mb-3">
-                          <i class="fas fa-chart-line"></i>
-                      </div>
-                      <h3>Digital Marketing</h3>
-                      <p>We design an elegant set of WordPress Themes & Plugins to help you create the website you always wanted!</p>
-                      <button class="btn btn-danger">Know More</button>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="course-box">
-                      <div class="icon mb-3">
-                          <i class="fas fa-mobile-alt"></i>
-                      </div>
-                      <h3>Mobile Development</h3>
-                      <p>We design an elegant set of WordPress Themes & Plugins to help you create the website you always wanted!</p>
-                      <button class="btn btn-danger">Know More</button>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="course-box">
-                      <div class="icon mb-3">
-                          <i class="fas fa-bullhorn"></i>
-                      </div>
-                      <h3>Marketing Strategy</h3>
-                      <p>We design an elegant set of WordPress Themes & Plugins to help you create the website you always wanted!</p>
-                      <button class="btn btn-danger">Know More</button>
-                  </div>
-              </div>
-          </div>
-          <div class="row mt-4">
-              <div class="col-md-4">
-                  <div class="course-box">
-                      <div class="icon mb-3">
-                          <i class="fas fa-chart-line"></i>
-                      </div>
-                      <h3>Digital Marketing</h3>
-                      <p>We design an elegant set of WordPress Themes & Plugins to help you create the website you always wanted!</p>
-                      <button class="btn btn-danger">Know More</button>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="course-box">
-                      <div class="icon mb-3">
-                          <i class="fas fa-mobile-alt"></i>
-                      </div>
-                      <h3>Mobile Development</h3>
-                      <p>We design an elegant set of WordPress Themes & Plugins to help you create the website you always wanted!</p>
-                      <button class="btn btn-danger">Know More</button>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="course-box">
-                      <div class="icon mb-3">
-                          <i class="fas fa-bullhorn"></i>
-                      </div>
-                      <h3>Marketing Strategy</h3>
-                      <p>We design an elegant set of WordPress Themes & Plugins to help you create the website you always wanted!</p>
-                      <button class="btn btn-danger">Know More</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  
+<!-- Services Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h5>
+            <h1 class="display-5 mb-0">Providing Cutting-Edge Technology Solutions</h1>
+        </div>
+        <div class="row g-5">
+            <!-- Flutter Development -->
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                    <div class="position-relative p-5">
+                        <i class="fa fa-mobile d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <h5 class="text-primary mb-0">Flutter</h5>
+                        <h3 class="mb-3">Development</h3>
+                        <p>Build natively compiled applications for mobile, web, and desktop from a single codebase using Flutter.</p>
+                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- MERN Stack Development -->
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                    <div class="position-relative p-5">
+                        <i class="fa fa-code d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <h5 class="text-primary mb-0">MERN Stack</h5>
+                        <h3 class="mb-3">Development</h3>
+                        <p>Create robust, scalable web applications using MongoDB, Express.js, React.js, and Node.js.</p>
+                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Python Development -->
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                    <div class="position-relative p-5">
+                        <i class="fa fa-python d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <h5 class="text-primary mb-0">Python</h5>
+                        <h3 class="mb-3">Development</h3>
+                        <p>Develop versatile applications and automate tasks with Python, one of the most powerful and accessible programming languages.</p>
+                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Digital Marketing -->
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                    <div class="position-relative p-5">
+                        <i class="fa fa-bullhorn d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <h5 class="text-primary mb-0">Digital Marketing</h5>
+                        <h3 class="mb-3">Strategies</h3>
+                        <p>Leverage digital marketing strategies to boost your online presence and drive business growth.</p>
+                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- DevOps -->
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                    <div class="position-relative p-5">
+                        <i class="fa fa-cogs d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <h5 class="text-primary mb-0">DevOps</h5>
+                        <h3 class="mb-3">Solutions</h3>
+                        <p>Implement DevOps practices to enhance collaboration, improve efficiency, and accelerate software delivery.</p>
+                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- UI/UX Design -->
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                    <div class="position-relative p-5">
+                        <i class="fa fa-paint-brush d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <h5 class="text-primary mb-0">UI/UX Design</h5>
+                        <h3 class="mb-3">Solutions</h3>
+                        <p>Create intuitive and engaging user interfaces and experiences to enhance user satisfaction and interaction.</p>
+                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Section 2 -->
+ <!-- service end  -->
 
-    <section>
-      <div class="container-fluid mt-5 main-content">
+
+<!-- IT Institution Intro Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 75px;">
+    <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/x6EJ-oOZcxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h1 class="mt-4">Know More.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta quas nulla animi eligendi nostrum ut quo ratione amet unde quasi doloremque, voluptas, corrupti optio iusto, beatae veniam error tempore.</p>
-                <a href="#" class="btn btn-danger btn-lg btn-get-support">Know More</a>
+                <h1 class="mt-4">Explore Our IT Courses</h1>
+                <p>Welcome to our institution, where technology meets innovation. Discover cutting-edge programs in software development, data science, cybersecurity, and more, designed to equip you with the skills for a successful career in the tech industry.</p>
+                <a href="#" class="btn btn-danger btn-lg btn-get-support">Learn More</a>
             </div>
         </div>
     </div>
-  </section>
+</div>
+<!-- IT Institution Intro End -->
 
+<!-- Special Offer Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="videos">
+        <div class="video-card">
+            <img src="images/video1.jpg" alt="Mobile Shopkeeper Becomes Software Engineer">
+            <p>Mobile Shopkeeper Becomes Software Engineer from Brocamp | Adarsh Raj</p>
+        </div>
+        <div class="video-card">
+            <img src="images/video2.jpg" alt="Housewife to Software Engineer">
+            <p>Housewife to Software Engineer | Story of Shahida | Placed from Brocamp</p>
+        </div>
+        <div class="video-card">
+            <img src="images/video3.jpg" alt="Plus Two Student Becomes Software Engineer">
+            <p>Plus Two Student Becomes Software Engineer with 12 LPA | Jobin Selvanose</p>
+        </div>
+        <div class="video-card">
+            <img src="images/video4.jpg" alt="Fresher becomes Software Engineer">
+            <p>Fresher becomes Software Engineer for ₹13 LPA Salary</p>
+        </div>
+    </div>
+</div>
+<!-- Special Offer End -->
 
-  <!-- section 3 -->
-    
+<!-- Instagram Reels Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
-        <div class="form-container">
-                <h2 class="form-title text-cente" style="color: rgb(0, 0, 0);">Want to know more about <strong>Wezlon</strong>?</h2>
-              <form id="registrationForm">
-                <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" class="form-control" id="name" name="name"  >
-                  <span class="error-message" id="nameError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" class="form-control" id="email" name="email"  >
-                  <span class="error-message" id="emailError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone Number:</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">+91</span>
-                    </div>
-                  <input type="tel" class="form-control" id="phone" name="phone"  >
-                </div>
-                <span class="error-message" id="phoneError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="place">Place:</label>
-                  <input type="text" class="form-control" id="place" name="place"  >
-                  <span class="error-message" id="placeError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="graduation">Last Graduation:</label>
-                  <input type="text" class="form-control" id="graduation" name="graduation"  >
-                  <span class="error-message" id="graduationError"></span>
-                </div>
-                <button type="submit" class="btn btn-danger btn-block">Talk To Our Career Expert</button>
-              </form>
-          </div>
-      
-      </div>
-  </div>
-  </section>
-    
-
-   </section>
-
-   <!-- <section>
-    <div class="container mt-5">
-      <h1 class="text-center mb-4">Success Stories from the Wezlon</h1>
-      <div class="row"> -->
-        <!-- Card 1 -->
-        <!-- <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="/Wezlon/Wezlon 2.png" class="card-img-top" alt="Athun Lal">
-            <div class="card-body">
-              <p class="card-text">suhail , placed as Gaming Developer with a high package of 6.5 LPA.</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- Card 2 -->
-        <!-- <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="/Wezlon/hero-content.jpg" class="card-img-top" alt="Parvathi Kumar">
-            <div class="card-body">
-              <p class="card-text">alfas  placed as Consultant Engineer from wezlon.</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- Card 3 -->
-        <!-- <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="/Wezlon/Wezlon 2.png" class="card-img-top" alt="Athul Raj K">
-            <div class="card-body">
-              <p class="card-text">sufiyan, placed as MERN Developer from wezlon.</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- Card 4 -->
-        <!-- <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="/Wezlon/hero-content.jpg" class="card-img-top" alt="Salah">
-            <div class="card-body">
-              <p class="card-text">niviya placed as React Js Developer with a package of 4.5 LPA.</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- Card 5 -->
-        <!-- <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="/Wezlon/hero-content.jpg" class="card-img-top" alt="Mishab P">
-            <div class="card-body">
-              <p class="card-text">raziq, placed as Software Developer with a package of 4.8 Lakhs.</p>
-            </div>
-          </div>
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Reels</h5>
+            <h1 class="display-5 mb-0">Check Out Our Latest Instagram Reels</h1>
         </div>
-      </div>
+        <div class="row g-3">
+            <!-- Reel 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-5 reel-card wow slideInUp" data-wow-delay="0.1s">
+                <div class="position-relative rounded-top">
+                    <div class="ratio ratio-4x5">
+                        <iframe src="https://www.instagram.com/reel/C-PJHldMEZ9/embed" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="w-100 rounded-top"></iframe>
+                    </div>
+                </div>
+                <div class="bg-primary text-center rounded-bottom p-3">
+                    <h6 class="text-white mb-1">We hit 1K</h6>
+                    <p class="text-white m-0">Thank you for being part of our Wezlon family! 🚀 Get ready for Wezhub - the future of learning is here!
+                    </p>
+                </div>
+            </div>
+            <!-- Reel 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-5 reel-card mt-md-5 wow slideInUp" data-wow-delay="0.2s">
+                <div class="position-relative rounded-top">
+                    <div class="ratio ratio-4x5">
+                        <iframe src="https://www.instagram.com/reel/C-EzJNVvmPC/embed" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="w-100 rounded-top"></iframe>
+                    </div>
+                </div>
+                <div class="bg-primary text-center rounded-bottom p-3">
+                    <h6 class="text-white mb-1">1k subscribers in youtube</h6>
+                    <p class="text-white m-0">Thank you For your support One Month</p>
+                </div>
+            </div>
+            <!-- Reel 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-5 reel-card wow slideInUp" data-wow-delay="0.3s">
+                <div class="position-relative rounded-top">
+                    <div class="ratio ratio-4x5">
+                        <iframe src="https://www.instagram.com/reel/C8wjpXYvN46/embed" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="w-100 rounded-top"></iframe>
+                    </div>
+                </div>
+                <div class="bg-primary text-center rounded-bottom p-3">
+                    <h6 class="text-white mb-1">Skill development</h6>
+                    <p class="text-white m-0">Skill development should be a key part of education. Let's equip students to be adaptable and successful!</p>
+                </div>
+            </div>
+            <!-- Reel 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-5 reel-card mt-md-5 wow slideInUp" data-wow-delay="0.4s">
+                <div class="position-relative rounded-top">
+                    <div class="ratio ratio-4x5">
+                        <iframe src="https://www.instagram.com/reel/C99s3pQC6mA/embed" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="w-100 rounded-top"></iframe>
+                    </div>
+                </div>
+                <div class="bg-primary text-center rounded-bottom p-3">
+                    <h6 class="text-white mb-1">digital marketing benefits</h6>
+                    <p class="text-white m-0">Explore the advantages of digital marketing for business growth.</p>
+                </div>
+            </div>
+            
+            <!-- Reel 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-5 reel-card wow slideInUp" data-wow-delay="0.5s">
+                <div class="position-relative rounded-top">
+                    <div class="ratio ratio-4x5">
+                        <iframe src="https://www.instagram.com/reel/C9y0oXWNDDE/embed" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="w-100"></iframe>
+                    </div>
+                    
+                </div>
+                <div class="bg-primary text-center rounded-bottom p-3">
+                    <h6 class="text-white mb-1">technical skill development</h6>
+                    <p class="text-white m-0">Learn how to enhance your technical skills effectively.</p>
+                </div>
+            </div>
+            
+        </div>
     </div>
-  
-   </section> -->
-  
-    
-     
-  
-  
+</div>
+<!-- Instagram Reels End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonials</h5>
+            <h1 class="display-5 mb-0">What Our Students Say</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="text-center pb-4">
+                <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                <div class="testimonial-text bg-light rounded p-4 mt-n5">
+                    <p class="mt-5">"The courses here have given me a strong foundation in software development. The hands-on approach and real-world projects were invaluable."</p>
+                    <h4 class="text-truncate">Sarah Williams</h4>
+                    <i>Software Developer</i>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="img-fluid mx-auto rounded-circle" src="img/Photo on 09-08-24 at 3.47 PM.jpg" style="width: 100px; height: 100px;">
+                <div class="testimonial-text bg-light rounded p-4 mt-n5">
+                    <p class="mt-5">"The cybersecurity program was comprehensive and challenging. The instructors are industry experts who really care about student success."</p>
+                    <h4 class="text-truncate">James Brown</h4>
+                    <i>Cybersecurity Analyst</i>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;">
+                <div class="testimonial-text bg-light rounded p-4 mt-n5">
+                    <p class="mt-5">"I was able to transition into data science smoothly after completing the data analytics course. The knowledge and skills I gained were top-notch."</p>
+                    <h4 class="text-truncate">Emily Clark</h4>
+                    <i>Data Scientist</i>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;">
+                <div class="testimonial-text bg-light rounded p-4 mt-n5">
+                    <p class="mt-5">"The supportive environment and excellent resources made learning here a great experience. I highly recommend this institution."</p>
+                    <h4 class="text-truncate">David Miller</h4>
+                    <i>IT Consultant</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+ 
+    <!-- Contact Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h5>
+                <h1 class="display-5 mb-0">Please Feel Contact Us</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-7 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <input type="text" class="form-control border-0 px-4" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control border-0 px-4" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 px-4" placeholder="Subject" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0 px-4 py-3" rows="8" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="bg-light rounded p-5">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-1">Our Office</h5>
+                                <span>hilite bussiness park calicut</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-1">Email Us</h5>
+                                <span>join@wezlon.com</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                            <div class="text-start">
+                                <h5 class="mb-1">Call Us</h5>
+                                <span>++91 8138830876</span>
+                            </div>
+                        </div>
+                        <div>
+                            <iframe class="position-relative w-100"
+                                src="https://www.google.com/maps/place/11°14'51.9%22N+75°50'02.2%22E/@11.2475013,75.8337752,19z/data=!4m5!3m4!4b1!8m2!3d11.24775!4d75.8339444?entry=ttu"
+                                frameborder="0" style="height: 230px; border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
 
 
-    <!-- Footer -->
-    <footer class="footer bg-dark text-white pt-5 pb-4">
-      <div class="container text-center text-md-left">
-          <div class="row text-center text-md-left">
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h5 class="text-uppercase mb-4 font-weight-bold">About Us</h5>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
-                  <p><a href="#" class="text-white" style="text-decoration: none;">About Us</a></p>
-                  <p><a href="#" class="text-white" style="text-decoration: none;">Services</a></p>
-                  <p><a href="#" class="text-white" style="text-decoration: none;">Contact Us</a></p>
-                  <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
-                  <p><a href="#" class="text-white" style="text-decoration: none;">Our Vision</a></p>
-              </div>
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h5 class="text-uppercase mb-4 font-weight-bold">Quick Contact</h5>
-                  <p><i class="fas fa-phone-alt mr-3"></i> 8590712033</p>
-                  <p><i class="fas fa-envelope mr-3"></i> admin@wezlon.com</p>
-                  <p><i class="fas fa-map-marker-alt mr-3"></i> Calicut</p>
-                  <p><i class="fas fa-clock mr-3"></i> 9 AM - 6 PM</p>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
-                  <div class="d-flex justify-content-center">
-                      <a href="https://www.instagram.com/wezlon_" class="me-3" target="_blank">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                      <a href="https://www.facebook.com/Wezlon" class="me-3" target="_blank">
-                          <i class="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="https://www.youtube.com/channel/@Wezlon2024" class="me-3" target="_blank">
-                          <i class="fab fa-youtube"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/in/wezlon" target="_blank">
-                          <i class="fab fa-linkedin-in"></i>
-                      </a>
-                  </div>
-              </div>
-          </div>
-          <div class="row align-items-center mt-3">
-              <div class="col-md-7 col-lg-8">
-                  <!-- Optional additional content -->
-              </div>
-          </div>
-      </div>
-  </footer>
-    
 
-      
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>hilit bussiness park calicut </p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>join@wezlon.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+91 8138830876</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary text-light py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Wezlon.com</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">WEZLON</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-   
-  </body>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
