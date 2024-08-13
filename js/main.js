@@ -72,14 +72,14 @@
 })(jQuery);
 
 
-window.onload = function() {
-    setTimeout(function() {
-        var loading = document.getElementById('loading');
-        var content = document.getElementById('content');
-        loading.style.display = 'none';
-        content.style.display = 'block';
-    }, 1000);  
-};
+// window.onload = function() {
+//     setTimeout(function() {
+//         var loading = document.getElementById('loading');
+//         var content = document.getElementById('content');
+//         loading.style.display = 'none';
+//         content.style.display = 'block';
+//     }, 1000);  
+// };
 
 document.addEventListener('DOMContentLoaded', (event) => {
     var popup = document.getElementById("popup");

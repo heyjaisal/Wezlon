@@ -21,7 +21,10 @@ h1,
 h2,
 .font-weight-bold {
     font-weight: 700 !important;
-    color: white;
+    color:rgb(255, 255, 255);
+}
+p{
+    color: black;
 }
 
 h3,
